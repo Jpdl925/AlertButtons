@@ -16,6 +16,11 @@ Inside the Alert there should also be a X to close the Alert.
 
 // Last updated 5/14/24
 
-// Peer Review by:
+// Peer Review by: David Jimenez
 
-// Comments: 
+// Comments: <br>  
+* I see that your Alert component works. <br>
+* In the App.tsxis relatively simple and has the Alert component call. <br>
+* As required, your useState is with your turnery operator so that it can be used.
+* I see in your Alert.tsx you have your turnery operator being used named "show".  I like how its inside of your componenet and not in your app.tsx so its more reusable.
+
