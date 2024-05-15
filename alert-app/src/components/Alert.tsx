@@ -1,34 +1,34 @@
 import { useState } from "react";
 
-interface AlertProps{
-  type:string
-}
+const Alert = () => {
+  const [show, setShow] = useState(false);
 
-const alertTypes = [
-  "alert-primary",
-  "alert-secondary",
-  "alert-success",
-  "alert-danger",
-  "alert-warning",
-  "alert-info",
-  "alert-light",
-  "alert-dark",
-]
-
-const [index, setIndex] = useState(0);
-
-
-const alertClick = (type) => {
-  type=alertTypes[]
-};
-
-
-
-const Alert = ({type="d-none"}:AlertProps) => {
   return (
     <>
-      <button className={`alert ${type}`} onClick={alertClick}>Show</button>
+      <div className="btnContainer">
+        <div className="allcontainer">
+        {show ? (
+          <div
+            className="alertShown alert alert-primary alert-dismissible"
+            role="alert"
+          >
+            <div>CONGRATZ! YOU CLICKED IT!</div>
+            <button
+              type="button"
+              className="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+              onClick={() => setShow(!show)}
+            ></button>
+          </div>
+        ) : null}
 
+        <button className="showBtn" onClick={() => setShow(!show)}>
+          Show
+        </button>
+      </div>
+
+        </div>
     </>
   );
 };

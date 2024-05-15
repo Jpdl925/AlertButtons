@@ -1,0 +1,26 @@
+
+.btnContainer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+button{
+    width: 5vw;
+    height: 3vw;
+    background-color:cornflowerblue;
+    color: white;
+    border: 2px solid black;
+}
+.showBtn{
+    justify-self: center;
+    font-size:35px;
+}
+.alertShown{
+    max-width: max-content;
+}
+.allcontainer{
+    display: block;
+    text-align: center;
+}
